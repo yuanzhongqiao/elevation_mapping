@@ -2,19 +2,19 @@
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></h2><a id="user-content-overview" class="anchor" aria-label="固定链接：概述" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是为移动机器人的高程测绘而开发的</font></font><a href="http://www.ros.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ROS</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包。该软件专为配备姿态估计（例如 IMU 和里程计）和距离传感器（例如结构光（Kinect、RealSense）、激光测距传感器、立体摄像头）的机器人的（本地）导航任务而设计。所提供的高程图仅限于机器人周围，并反映了通过机器人运动（以机器人为中心的测绘）而聚集的姿态不确定性。该方法被开发用于明确处理机器人姿态估计的漂移。</font></font></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是研究代码，预计它会经常变化，并且不适用于任何特定用途。</font></font></p>
-<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/ANYbotics/elevation_mapping/blob/master/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源代码根据BSD 3-Clause 许可证</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/ANYbotics/elevation_mapping/blob/master/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源代码根据BSD 3-Clause 许可证</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布</font><font style="vertical-align: inherit;">。</font></font></p>
 <p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者：Péter Fankhauser</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 合著者：Maximilian Wulf</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 所属机构：</font></font><a href="https://www.anybotics.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ANYbotics</font></font></a><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 维护者：Maximilian Wulf，</font></font><a href="mailto:mwulf@anybotics.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mwulf@anybotics.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，Magnus Gärtner，</font></font><a href="mailto:mgaertner@anybotics.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mgaertner @anybotics.com</font></font></a><br></strong></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目最初是在苏黎世联邦理工学院（自主系统实验室和机器人系统实验室）开发的。</font></font></p>
 <p dir="auto"><a href="https://www.anymal-research.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这项工作是 ANYmal Research 的一部分，ANYmal Research 是一个致力于推动足式机器人技术的社区。</font></font></a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/ANYbotics/elevation_mapping/blob/master/elevation_mapping_demos/doc/elevation_map.jpg"><img alt="海拔地图示例" src="/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/elevation_map.jpg" width="700" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ANYbotics/elevation_mapping/blob/master/elevation_mapping_demos/doc/elevation_map.jpg"><img alt="海拔地图示例" src="https://github.com/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/elevation_map.jpg" width="700" style="max-width: 100%;"></a></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用中的高程测绘软件的视频：</font></font></p>
-<p dir="auto"><a alt="StarlETH Kinect 高程测绘" href="https://www.youtube.com/watch?v=I9eP8GrMyNQ" rel="nofollow"><img src="/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/starleth_kinect.jpg" align="left" width="180" style="max-width: 100%;"></a>
-<a alt="ANYmal 户外地形测绘" href="https://www.youtube.com/watch?v=iVMsQPTM65M" rel="nofollow"><img src="/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/anymal_forrest.jpg" align="left" width="180" style="max-width: 100%;"></a>
-<a alt="ANYmal 崎岖地形运动规划器" href="https://www.youtube.com/watch?v=CpzQu25iLa0" rel="nofollow"><img src="/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/anymal_locomotion_planner.jpg" align="left" width="180" style="max-width: 100%;"></a>
-<a alt="ANYmal 户外爬楼梯" href="https://www.youtube.com/watch?v=vSveQrJLRTo" rel="nofollow"><img src="/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/anymal_outdoor_stairs.jpg" width="180" style="max-width: 100%;"></a></p>
+<p dir="auto"><a alt="StarlETH Kinect 高程测绘" href="https://www.youtube.com/watch?v=I9eP8GrMyNQ" rel="nofollow"><img src="https://github.com/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/starleth_kinect.jpg" align="left" width="180" style="max-width: 100%;"></a>
+<a alt="ANYmal 户外地形测绘" href="https://www.youtube.com/watch?v=iVMsQPTM65M" rel="nofollow"><img src="https://github.com/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/anymal_forrest.jpg" align="left" width="180" style="max-width: 100%;"></a>
+<a alt="ANYmal 崎岖地形运动规划器" href="https://www.youtube.com/watch?v=CpzQu25iLa0" rel="nofollow"><img src="https://github.com/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/anymal_locomotion_planner.jpg" align="left" width="180" style="max-width: 100%;"></a>
+<a alt="ANYmal 户外爬楼梯" href="https://www.youtube.com/watch?v=vSveQrJLRTo" rel="nofollow"><img src="https://github.com/ANYbotics/elevation_mapping/raw/master/elevation_mapping_demos/doc/anymal_outdoor_stairs.jpg" width="180" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引用</font></font></h2><a id="user-content-citing" class="anchor" aria-label="永久链接：引用" href="#citing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下论文（可</font></font><a href="https://doi.org/10.3929/ethz-b-000272110" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取）介绍了此软件中使用的以机器人为中心的高程测绘方法。如果您在学术背景下使用此作品，请引用以下出版物：</font></font></p>
 <ul dir="auto">
@@ -34,23 +34,7 @@
     year = {2018}
   }
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="  @article{Fankhauser2018ProbabilisticTerrainMapping,
-    author = {Fankhauser, P{\'{e}}ter and Bloesch, Michael and Hutter, Marco},
-    doi = {10.1109/LRA.2018.2849506},
-    title = {Probabilistic Terrain Mapping for Mobile Robots with Uncertain Localization},
-    journal = {IEEE Robotics and Automation Letters (RA-L)},
-    volume = {3},
-    number = {4},
-    pages = {3019--3026},
-    year = {2018}
-  }" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+ 
   </div></div>
 </li>
 <li>
